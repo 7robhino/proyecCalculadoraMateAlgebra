@@ -103,15 +103,7 @@ namespace calculadoraMateAlgebra
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         //MeTODO PARA ARRASTRAR EL FORMULARIO
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -138,6 +130,71 @@ namespace calculadoraMateAlgebra
             mostrarSubMenu(pnlSubMenuAlgebra);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new rectasMate());
+
+            ocultarSubMenu();
+        }
+
+        private void btnCircuferencia_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new circuferencia());
+
+
+            ocultarSubMenu();
+        }
+
+        private void btnParabola_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnEclipse_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnHiperbola_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnSustitucion_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnIgualacion_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnEliminacion_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnFormGrafica_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnDeterminante_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnMatrices_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
+        private void btnVectores_Click(object sender, EventArgs e)
+        {
+            ocultarSubMenu();
+        }
+
         private void ocultarPanelMostrado()
         {
             if(pnlSubMenuMate.Visible == true)
@@ -161,6 +218,23 @@ namespace calculadoraMateAlgebra
             {
                 subMenu.Visible = false;
             }
+        }
+
+       
+
+        private Form activeForm = null;
+        private void openChildFormInPanel(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }
