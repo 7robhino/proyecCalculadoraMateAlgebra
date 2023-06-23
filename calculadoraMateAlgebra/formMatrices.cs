@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace calculadoraMateAlgebra
 {
-    public partial class circuferencia : Form
+    public partial class formMatrices : Form
     {
-        public circuferencia()
+        public formMatrices()
         {
             InitializeComponent();
         }
 
-        private void btnCerrarForm_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

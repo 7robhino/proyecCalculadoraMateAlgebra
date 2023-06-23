@@ -59,11 +59,71 @@
     <Compile Include="circuferencia.Designer.cs">
       <DependentUpon>circuferencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="formDeterminante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDeterminante.Designer.cs">
+      <DependentUpon>formDeterminante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEclipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEclipse.Designer.cs">
+      <DependentUpon>formEclipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEliminacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEliminacion.Designer.cs">
+      <DependentUpon>formEliminacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGraficaAlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGraficaAlg.Designer.cs">
+      <DependentUpon>formGraficaAlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHiperbola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHiperbola.Designer.cs">
+      <DependentUpon>formHiperbola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formIgualacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formIgualacion.Designer.cs">
+      <DependentUpon>formIgualacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMatrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMatrices.Designer.cs">
+      <DependentUpon>formMatrices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formParabola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formParabola.Designer.cs">
+      <DependentUpon>formParabola.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSustitucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSustitucion.Designer.cs">
+      <DependentUpon>formSustitucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formVectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formVectores.Designer.cs">
+      <DependentUpon>formVectores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,8 +136,38 @@
     <EmbeddedResource Include="circuferencia.resx">
       <DependentUpon>circuferencia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formDeterminante.resx">
+      <DependentUpon>formDeterminante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEclipse.resx">
+      <DependentUpon>formEclipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEliminacion.resx">
+      <DependentUpon>formEliminacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGraficaAlg.resx">
+      <DependentUpon>formGraficaAlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHiperbola.resx">
+      <DependentUpon>formHiperbola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formIgualacion.resx">
+      <DependentUpon>formIgualacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMatrices.resx">
+      <DependentUpon>formMatrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formParabola.resx">
+      <DependentUpon>formParabola.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSustitucion.resx">
+      <DependentUpon>formSustitucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formVectores.resx">
+      <DependentUpon>formVectores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,7 +1,7 @@
 ﻿
 namespace calculadoraMateAlgebra
 {
-    partial class circuferencia
+    partial class formSustitucion
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,38 @@ namespace calculadoraMateAlgebra
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCerrarForm = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnCerrarForm
+            // button1
             // 
-            this.btnCerrarForm.FlatAppearance.BorderSize = 0;
-            this.btnCerrarForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCerrarForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarForm.Location = new System.Drawing.Point(33, 51);
-            this.btnCerrarForm.Name = "btnCerrarForm";
-            this.btnCerrarForm.Size = new System.Drawing.Size(53, 43);
-            this.btnCerrarForm.TabIndex = 0;
-            this.btnCerrarForm.Text = "X";
-            this.btnCerrarForm.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // circuferencia
+            // formSustitucion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 521);
-            this.Controls.Add(this.btnCerrarForm);
+            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "circuferencia";
-            this.Text = "circuferencia";
+            this.Name = "formSustitucion";
+            this.Text = "formSustitucion";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnCerrarForm;
+        private System.Windows.Forms.Button button1;
     }
 }

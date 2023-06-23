@@ -147,51 +147,61 @@ namespace calculadoraMateAlgebra
 
         private void btnParabola_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formParabola());
             ocultarSubMenu();
         }
 
         private void btnEclipse_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formEclipse());
             ocultarSubMenu();
         }
 
         private void btnHiperbola_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formHiperbola());
             ocultarSubMenu();
         }
 
         private void btnSustitucion_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formSustitucion());
             ocultarSubMenu();
         }
 
         private void btnIgualacion_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formIgualacion());
             ocultarSubMenu();
         }
 
         private void btnEliminacion_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formEliminacion());
             ocultarSubMenu();
         }
 
         private void btnFormGrafica_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formGraficaAlg());
             ocultarSubMenu();
         }
 
         private void btnDeterminante_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formDeterminante());
             ocultarSubMenu();
         }
 
         private void btnMatrices_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formMatrices());
             ocultarSubMenu();
         }
 
         private void btnVectores_Click(object sender, EventArgs e)
         {
+            openChildFormInPanel(new formVectores());
             ocultarSubMenu();
         }
 
