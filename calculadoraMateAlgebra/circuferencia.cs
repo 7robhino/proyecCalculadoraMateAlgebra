@@ -21,5 +21,10 @@ namespace calculadoraMateAlgebra
         {
             this.Close();
         }
+
+        private void btnCerrarForm_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace calculadoraMateAlgebra
             this.btnCerrarForm.TabIndex = 0;
             this.btnCerrarForm.Text = "X";
             this.btnCerrarForm.UseVisualStyleBackColor = true;
+            this.btnCerrarForm.Click += new System.EventHandler(this.btnCerrarForm_Click_1);
             // 
             // circuferencia
             // 
