@@ -35,8 +35,11 @@ namespace calculadoraMateAlgebra
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlLateral = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.pnlSubMenuAlgebra = new System.Windows.Forms.Panel();
+            this.btnVectores = new System.Windows.Forms.Button();
             this.btnMatrices = new System.Windows.Forms.Button();
+            this.btnDeterminante = new System.Windows.Forms.Button();
             this.btnFormGrafica = new System.Windows.Forms.Button();
             this.btnEliminacion = new System.Windows.Forms.Button();
             this.btnIgualacion = new System.Windows.Forms.Button();
@@ -56,9 +59,6 @@ namespace calculadoraMateAlgebra
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.btnVectores = new System.Windows.Forms.Button();
-            this.btnDeterminante = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
             this.pnlFormularios.SuspendLayout();
             this.panelChildForm.SuspendLayout();
@@ -107,7 +107,7 @@ namespace calculadoraMateAlgebra
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(216, 155);
+            this.pictureBox2.Location = new System.Drawing.Point(257, 155);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(225, 225);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -130,6 +130,19 @@ namespace calculadoraMateAlgebra
             this.pnlLateral.Size = new System.Drawing.Size(200, 560);
             this.pnlLateral.TabIndex = 1;
             // 
+            // iconButton3
+            // 
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.PlusMinus;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(3, 141);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(36, 33);
+            this.iconButton3.TabIndex = 6;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            // 
             // pnlSubMenuAlgebra
             // 
             this.pnlSubMenuAlgebra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(85)))), ((int)(((byte)(107)))));
@@ -146,6 +159,22 @@ namespace calculadoraMateAlgebra
             this.pnlSubMenuAlgebra.Size = new System.Drawing.Size(183, 299);
             this.pnlSubMenuAlgebra.TabIndex = 4;
             // 
+            // btnVectores
+            // 
+            this.btnVectores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVectores.FlatAppearance.BorderSize = 0;
+            this.btnVectores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVectores.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVectores.Location = new System.Drawing.Point(0, 240);
+            this.btnVectores.Name = "btnVectores";
+            this.btnVectores.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnVectores.Size = new System.Drawing.Size(183, 40);
+            this.btnVectores.TabIndex = 6;
+            this.btnVectores.Text = "Vectores";
+            this.btnVectores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVectores.UseVisualStyleBackColor = true;
+            this.btnVectores.Click += new System.EventHandler(this.btnVectores_Click);
+            // 
             // btnMatrices
             // 
             this.btnMatrices.Dock = System.Windows.Forms.DockStyle.Top;
@@ -161,6 +190,22 @@ namespace calculadoraMateAlgebra
             this.btnMatrices.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMatrices.UseVisualStyleBackColor = true;
             this.btnMatrices.Click += new System.EventHandler(this.btnMatrices_Click);
+            // 
+            // btnDeterminante
+            // 
+            this.btnDeterminante.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDeterminante.FlatAppearance.BorderSize = 0;
+            this.btnDeterminante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeterminante.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDeterminante.Location = new System.Drawing.Point(0, 160);
+            this.btnDeterminante.Name = "btnDeterminante";
+            this.btnDeterminante.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnDeterminante.Size = new System.Drawing.Size(183, 40);
+            this.btnDeterminante.TabIndex = 4;
+            this.btnDeterminante.Text = "Determinante";
+            this.btnDeterminante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeterminante.UseVisualStyleBackColor = true;
+            this.btnDeterminante.Click += new System.EventHandler(this.btnDeterminante_Click);
             // 
             // btnFormGrafica
             // 
@@ -364,9 +409,9 @@ namespace calculadoraMateAlgebra
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(138, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -453,51 +498,6 @@ namespace calculadoraMateAlgebra
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.PlusMinus;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(3, 141);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(36, 33);
-            this.iconButton3.TabIndex = 6;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // btnVectores
-            // 
-            this.btnVectores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVectores.FlatAppearance.BorderSize = 0;
-            this.btnVectores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVectores.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnVectores.Location = new System.Drawing.Point(0, 240);
-            this.btnVectores.Name = "btnVectores";
-            this.btnVectores.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnVectores.Size = new System.Drawing.Size(183, 40);
-            this.btnVectores.TabIndex = 6;
-            this.btnVectores.Text = "Vectores";
-            this.btnVectores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVectores.UseVisualStyleBackColor = true;
-            this.btnVectores.Click += new System.EventHandler(this.btnVectores_Click);
-            // 
-            // btnDeterminante
-            // 
-            this.btnDeterminante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDeterminante.FlatAppearance.BorderSize = 0;
-            this.btnDeterminante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeterminante.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnDeterminante.Location = new System.Drawing.Point(0, 160);
-            this.btnDeterminante.Name = "btnDeterminante";
-            this.btnDeterminante.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDeterminante.Size = new System.Drawing.Size(183, 40);
-            this.btnDeterminante.TabIndex = 4;
-            this.btnDeterminante.Text = "Determinante";
-            this.btnDeterminante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeterminante.UseVisualStyleBackColor = true;
-            this.btnDeterminante.Click += new System.EventHandler(this.btnDeterminante_Click);
             // 
             // FormPrincipal
             // 
