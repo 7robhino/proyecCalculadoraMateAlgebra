@@ -59,6 +59,7 @@ namespace calculadoraMateAlgebra
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
             this.pnlFormularios.SuspendLayout();
             this.panelChildForm.SuspendLayout();
@@ -146,6 +147,7 @@ namespace calculadoraMateAlgebra
             // pnlSubMenuAlgebra
             // 
             this.pnlSubMenuAlgebra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(85)))), ((int)(((byte)(107)))));
+            this.pnlSubMenuAlgebra.Controls.Add(this.button2);
             this.pnlSubMenuAlgebra.Controls.Add(this.btnVectores);
             this.pnlSubMenuAlgebra.Controls.Add(this.btnMatrices);
             this.pnlSubMenuAlgebra.Controls.Add(this.btnDeterminante);
@@ -156,7 +158,7 @@ namespace calculadoraMateAlgebra
             this.pnlSubMenuAlgebra.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubMenuAlgebra.Location = new System.Drawing.Point(0, 433);
             this.pnlSubMenuAlgebra.Name = "pnlSubMenuAlgebra";
-            this.pnlSubMenuAlgebra.Size = new System.Drawing.Size(183, 299);
+            this.pnlSubMenuAlgebra.Size = new System.Drawing.Size(183, 312);
             this.pnlSubMenuAlgebra.TabIndex = 4;
             // 
             // btnVectores
@@ -499,6 +501,22 @@ namespace calculadoraMateAlgebra
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button2.Location = new System.Drawing.Point(0, 280);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(183, 40);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Matriz 3*3";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,7 +525,6 @@ namespace calculadoraMateAlgebra
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.panelContenedor.ResumeLayout(false);
@@ -556,6 +573,7 @@ namespace calculadoraMateAlgebra
         private FontAwesome.Sharp.IconButton iconButton3;
         private System.Windows.Forms.Button btnVectores;
         private System.Windows.Forms.Button btnDeterminante;
+        private System.Windows.Forms.Button button2;
     }
 }
 

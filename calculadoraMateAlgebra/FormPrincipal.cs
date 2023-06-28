@@ -230,7 +230,10 @@ namespace calculadoraMateAlgebra
             }
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private Form activeForm = null;
         private void openChildFormInPanel(Form childForm)
