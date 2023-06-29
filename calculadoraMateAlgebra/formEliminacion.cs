@@ -39,46 +39,54 @@ namespace calculadoraMateAlgebra
             lblMostrarSoluc.Visible = true;
             lblMostrarSoluY.Visible = true;
 
-            float a = Convert.ToSingle(txta1.Text);
-            float b = Convert.ToSingle(txtb1.Text);
-            float c = Convert.ToSingle(txtc1.Text);
-            float d = Convert.ToSingle(txta2.Text);
-            float e2 = Convert.ToSingle(txtb2.Text);
-            float f = Convert.ToSingle(txtc2.Text);
+            if(txta1.Text == "")
+            {
+                MessageBox.Show("Es un caso muy en particular");
+            }
+            else
+            {
+                float a = Convert.ToSingle(txta1.Text);
+                float b = Convert.ToSingle(txtb1.Text);
+                float c = Convert.ToSingle(txtc1.Text);
+                float d = Convert.ToSingle(txta2.Text);
+                float e2 = Convert.ToSingle(txtb2.Text);
+                float f = Convert.ToSingle(txtc2.Text);
 
-            // Realizar la eliminación
-            float factor = d / a;
-            d -= factor * a;
-            e2 -= factor * b;
-            f -= factor * c;
+                // Realizar la eliminación
+                float factor = d / a;
+                d -= factor * a;
+                e2 -= factor * b;
+                f -= factor * c;
 
-            // Calcular los valores de x e y
-            float y = f / e2;
-            float x = (c - b * y) / a;
+                // Calcular los valores de x e y
+                float y = f / e2;
+                float x = (c - b * y) / a;
 
-            label10.Text = d+"/"+a;
-            label12.Text = factor.ToString();
+                label10.Text = d + "/" + a;
+                label12.Text = factor.ToString();
 
-            lblTituloProc.Visible = true;
-            lblX.Text = ""+d+" -= "+factor+" * " + a;
-            lblResulq1.Text = d.ToString();
-            lblX.Visible = true;
+                lblTituloProc.Visible = true;
+                lblX.Text = "" + d + " -= " + factor + " * " + a;
+                lblResulq1.Text = d.ToString();
+                lblX.Visible = true;
 
-            label11.Text = "  "+e2+" -= "+factor+" * "+b+"";
-            lblResulQ2.Text = e2.ToString();
+                label11.Text = "  " + e2 + " -= " + factor + " * " + b + "";
+                lblResulQ2.Text = e2.ToString();
 
-            label13.Text = " " + f + " -= " + factor + " * " + c + "";
-            lblResulQ3.Text = f.ToString();
+                label13.Text = " " + f + " -= " + factor + " * " + c + "";
+                lblResulQ3.Text = f.ToString();
 
-            lblResul.Text = "y = "+f+" / "+e2+"";
-            lblTituloValores.Visible = true;
-            lblXX.Text = "x = ("+c+" - "+b+" * "+y+") / "+a+"";
-            lblXX.Visible = true;
+                lblResul.Text = "y = " + f + " / " + e2 + "";
+                lblTituloValores.Visible = true;
+                lblXX.Text = "x = (" + c + " - " + b + " * " + y + ") / " + a + "";
+                lblXX.Visible = true;
 
-            label7.Text = x.ToString();
-            label9.Text = y.ToString();
+                label7.Text = x.ToString();
+                label9.Text = y.ToString();
 
-            label8.Visible = true;
+                label8.Visible = true;
+            }
+            
         }
 
         private void formEliminacion_Load(object sender, EventArgs e)

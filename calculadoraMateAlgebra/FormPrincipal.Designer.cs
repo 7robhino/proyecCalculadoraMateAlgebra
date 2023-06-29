@@ -37,6 +37,7 @@ namespace calculadoraMateAlgebra
             this.pnlLateral = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.pnlSubMenuAlgebra = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnVectores = new System.Windows.Forms.Button();
             this.btnMatrices = new System.Windows.Forms.Button();
             this.btnDeterminante = new System.Windows.Forms.Button();
@@ -59,7 +60,6 @@ namespace calculadoraMateAlgebra
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
             this.pnlFormularios.SuspendLayout();
             this.panelChildForm.SuspendLayout();
@@ -81,7 +81,7 @@ namespace calculadoraMateAlgebra
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(950, 600);
+            this.panelContenedor.Size = new System.Drawing.Size(950, 615);
             this.panelContenedor.TabIndex = 0;
             // 
             // pnlFormularios
@@ -91,7 +91,7 @@ namespace calculadoraMateAlgebra
             this.pnlFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFormularios.Location = new System.Drawing.Point(200, 40);
             this.pnlFormularios.Name = "pnlFormularios";
-            this.pnlFormularios.Size = new System.Drawing.Size(750, 560);
+            this.pnlFormularios.Size = new System.Drawing.Size(750, 575);
             this.pnlFormularios.TabIndex = 2;
             // 
             // panelChildForm
@@ -101,14 +101,14 @@ namespace calculadoraMateAlgebra
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(0, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(750, 560);
+            this.panelChildForm.Size = new System.Drawing.Size(750, 575);
             this.panelChildForm.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(257, 155);
+            this.pictureBox2.Location = new System.Drawing.Point(257, 162);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(225, 225);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -128,7 +128,7 @@ namespace calculadoraMateAlgebra
             this.pnlLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLateral.Location = new System.Drawing.Point(0, 40);
             this.pnlLateral.Name = "pnlLateral";
-            this.pnlLateral.Size = new System.Drawing.Size(200, 560);
+            this.pnlLateral.Size = new System.Drawing.Size(200, 575);
             this.pnlLateral.TabIndex = 1;
             // 
             // iconButton3
@@ -160,6 +160,22 @@ namespace calculadoraMateAlgebra
             this.pnlSubMenuAlgebra.Name = "pnlSubMenuAlgebra";
             this.pnlSubMenuAlgebra.Size = new System.Drawing.Size(183, 312);
             this.pnlSubMenuAlgebra.TabIndex = 4;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button2.Location = new System.Drawing.Point(0, 280);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(183, 40);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Matriz 3*3";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnVectores
             // 
@@ -501,30 +517,15 @@ namespace calculadoraMateAlgebra
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Location = new System.Drawing.Point(0, 280);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(183, 40);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Matriz 3*3";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 600);
+            this.ClientSize = new System.Drawing.Size(950, 615);
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.panelContenedor.ResumeLayout(false);
