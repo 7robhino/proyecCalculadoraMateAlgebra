@@ -111,7 +111,7 @@ namespace calculadoraMateAlgebra
             this.pictureBox2.Location = new System.Drawing.Point(257, 162);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(225, 225);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -531,7 +531,6 @@ namespace calculadoraMateAlgebra
             this.panelContenedor.ResumeLayout(false);
             this.pnlFormularios.ResumeLayout(false);
             this.panelChildForm.ResumeLayout(false);
-            this.panelChildForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlLateral.ResumeLayout(false);
             this.pnlSubMenuAlgebra.ResumeLayout(false);

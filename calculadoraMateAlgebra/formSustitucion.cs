@@ -49,12 +49,12 @@ namespace calculadoraMateAlgebra
 
                 // Sustitución del valor de x en la segunda ecuación
                 double y = (c2 - a2 * x) / b2;
-                lblProcesoX.Text = " x = (" + c1 + " - " + b1 + " * (" + c2 + " / " + b2 + ")) / (" + a1 + " - " + b1 + " * (" + a2 + " / " + b2 + "))";
-                lblResulX.Text = x.ToString();
-                label13.Text = "y = (" + c2 + " - " + a2 + " * " + x + ") / " + b2 + "";
+                lblX.Text = " x = (" + c1 + " - " + b1 + " * (" + c2 + " / " + b2 + ")) / (" + a1 + " - " + b1 + " * (" + a2 + " / " + b2 + "))";
+                lblRX.Text = x.ToString();
+                lblY.Text = "y = (" + c2 + " - " + a2 + " * " + x + ") / " + b2 + "";
 
-                label7.Text = x.ToString();
-                label9.Text = y.ToString();
+                lblRepuestaX.Text = x.ToString();
+                lblRespuestaY.Text = y.ToString();
             }
            
 
@@ -136,6 +136,11 @@ namespace calculadoraMateAlgebra
 
                 btnResolver.PerformClick(); // Activa el evento Click del Button1
             }
+        }
+
+        private void lblRespuestaY_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

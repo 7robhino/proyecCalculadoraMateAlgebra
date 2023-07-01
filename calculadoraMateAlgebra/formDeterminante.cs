@@ -35,7 +35,7 @@ namespace calculadoraMateAlgebra
 
         private void btnResolver_Click(object sender, EventArgs e)
         {
-            if (txta1.Text == "")
+            if (txta1.Text == "" || txta2.Text == " " || txtc1.Text == "" || txtb1.Text == " "||txtc2.Text == " ")
             {
                 MessageBox.Show("No se puede");
             }

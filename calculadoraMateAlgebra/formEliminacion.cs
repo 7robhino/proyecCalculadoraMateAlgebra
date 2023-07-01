@@ -35,9 +35,7 @@ namespace calculadoraMateAlgebra
 
         private void btnResolver_Click(object sender, EventArgs e)
         {
-            //mostrar Resultados
-            lblMostrarSoluc.Visible = true;
-            lblMostrarSoluY.Visible = true;
+            
 
             if(txta1.Text == "")
             {
@@ -45,6 +43,9 @@ namespace calculadoraMateAlgebra
             }
             else
             {
+                //mostrar Resultados
+                lblMostrarSoluc.Visible = true;
+                lblMostrarSoluY.Visible = true;
                 float a = Convert.ToSingle(txta1.Text);
                 float b = Convert.ToSingle(txtb1.Text);
                 float c = Convert.ToSingle(txtc1.Text);

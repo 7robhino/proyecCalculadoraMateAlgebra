@@ -51,7 +51,6 @@ namespace calculadoraMateAlgebra
             this.txtc1 = new System.Windows.Forms.TextBox();
             this.txtb1 = new System.Windows.Forms.TextBox();
             this.txta1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblMostrarSoluY = new System.Windows.Forms.Label();
@@ -60,6 +59,9 @@ namespace calculadoraMateAlgebra
             this.lblRespX = new System.Windows.Forms.Label();
             this.lblRespY = new System.Windows.Forms.Label();
             this.lblRespZ = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,8 +78,7 @@ namespace calculadoraMateAlgebra
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLimpiar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -97,8 +98,7 @@ namespace calculadoraMateAlgebra
             // 
             // btnResolver
             // 
-            this.btnResolver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnResolver.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnResolver.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnResolver.FlatAppearance.BorderSize = 0;
             this.btnResolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -118,8 +118,7 @@ namespace calculadoraMateAlgebra
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(243, 120);
@@ -127,11 +126,11 @@ namespace calculadoraMateAlgebra
             this.label5.Size = new System.Drawing.Size(18, 20);
             this.label5.TabIndex = 112;
             this.label5.Text = "+";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(243, 73);
@@ -142,11 +141,10 @@ namespace calculadoraMateAlgebra
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(310, 72);
+            this.label3.Location = new System.Drawing.Point(312, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 20);
             this.label3.TabIndex = 110;
@@ -154,8 +152,7 @@ namespace calculadoraMateAlgebra
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(310, 119);
@@ -163,11 +160,11 @@ namespace calculadoraMateAlgebra
             this.label2.Size = new System.Drawing.Size(18, 20);
             this.label2.TabIndex = 109;
             this.label2.Text = "=";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtb2
             // 
-            this.txtb2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtb2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtb2.Location = new System.Drawing.Point(196, 119);
             this.txtb2.Name = "txtb2";
             this.txtb2.Size = new System.Drawing.Size(38, 20);
@@ -176,8 +173,7 @@ namespace calculadoraMateAlgebra
             // 
             // txtb3
             // 
-            this.txtb3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtb3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtb3.Location = new System.Drawing.Point(267, 119);
             this.txtb3.Name = "txtb3";
             this.txtb3.Size = new System.Drawing.Size(37, 20);
@@ -186,7 +182,7 @@ namespace calculadoraMateAlgebra
             // 
             // txtInd2
             // 
-            this.txtInd2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtInd2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtInd2.Location = new System.Drawing.Point(334, 122);
             this.txtInd2.Name = "txtInd2";
             this.txtInd2.Size = new System.Drawing.Size(31, 20);
@@ -195,8 +191,7 @@ namespace calculadoraMateAlgebra
             // 
             // txta3
             // 
-            this.txta3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txta3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txta3.Location = new System.Drawing.Point(267, 71);
             this.txta3.Name = "txta3";
             this.txta3.Size = new System.Drawing.Size(37, 20);
@@ -205,8 +200,7 @@ namespace calculadoraMateAlgebra
             // 
             // txtInd1
             // 
-            this.txtInd1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtInd1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtInd1.Location = new System.Drawing.Point(334, 74);
             this.txtInd1.Name = "txtInd1";
             this.txtInd1.Size = new System.Drawing.Size(31, 20);
@@ -215,8 +209,7 @@ namespace calculadoraMateAlgebra
             // 
             // txta2
             // 
-            this.txta2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txta2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txta2.Location = new System.Drawing.Point(196, 71);
             this.txta2.Name = "txta2";
             this.txta2.Size = new System.Drawing.Size(38, 20);
@@ -239,8 +232,7 @@ namespace calculadoraMateAlgebra
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(243, 159);
@@ -248,11 +240,11 @@ namespace calculadoraMateAlgebra
             this.label6.Size = new System.Drawing.Size(18, 20);
             this.label6.TabIndex = 120;
             this.label6.Text = "+";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(310, 158);
@@ -260,11 +252,11 @@ namespace calculadoraMateAlgebra
             this.label7.Size = new System.Drawing.Size(18, 20);
             this.label7.TabIndex = 119;
             this.label7.Text = "=";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtc2
             // 
-            this.txtc2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtc2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc2.Location = new System.Drawing.Point(196, 158);
             this.txtc2.Name = "txtc2";
             this.txtc2.Size = new System.Drawing.Size(38, 20);
@@ -273,8 +265,7 @@ namespace calculadoraMateAlgebra
             // 
             // txtc3
             // 
-            this.txtc3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtc3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc3.Location = new System.Drawing.Point(267, 158);
             this.txtc3.Name = "txtc3";
             this.txtc3.Size = new System.Drawing.Size(37, 20);
@@ -283,7 +274,7 @@ namespace calculadoraMateAlgebra
             // 
             // txtInd3
             // 
-            this.txtInd3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtInd3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtInd3.Location = new System.Drawing.Point(334, 161);
             this.txtInd3.Name = "txtInd3";
             this.txtInd3.Size = new System.Drawing.Size(31, 20);
@@ -293,8 +284,7 @@ namespace calculadoraMateAlgebra
             // 
             // txtc1
             // 
-            this.txtc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtc1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtc1.Location = new System.Drawing.Point(123, 157);
             this.txtc1.Name = "txtc1";
             this.txtc1.Size = new System.Drawing.Size(38, 20);
@@ -303,8 +293,7 @@ namespace calculadoraMateAlgebra
             // 
             // txtb1
             // 
-            this.txtb1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtb1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtb1.Location = new System.Drawing.Point(123, 118);
             this.txtb1.Name = "txtb1";
             this.txtb1.Size = new System.Drawing.Size(38, 20);
@@ -313,30 +302,16 @@ namespace calculadoraMateAlgebra
             // 
             // txta1
             // 
-            this.txta1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txta1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txta1.Location = new System.Drawing.Point(123, 70);
             this.txta1.Name = "txta1";
             this.txta1.Size = new System.Drawing.Size(38, 20);
             this.txta1.TabIndex = 121;
             this.txta1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txta1_KeyPress);
             // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(167, 158);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 20);
-            this.label8.TabIndex = 126;
-            this.label8.Text = "+";
-            // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(167, 119);
@@ -347,8 +322,7 @@ namespace calculadoraMateAlgebra
             // 
             // label10
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(167, 72);
@@ -395,6 +369,7 @@ namespace calculadoraMateAlgebra
             // 
             // lblRespX
             // 
+            this.lblRespX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRespX.AutoSize = true;
             this.lblRespX.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRespX.Location = new System.Drawing.Point(330, 245);
@@ -404,6 +379,7 @@ namespace calculadoraMateAlgebra
             // 
             // lblRespY
             // 
+            this.lblRespY.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRespY.AutoSize = true;
             this.lblRespY.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRespY.Location = new System.Drawing.Point(345, 305);
@@ -413,12 +389,49 @@ namespace calculadoraMateAlgebra
             // 
             // lblRespZ
             // 
+            this.lblRespZ.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRespZ.AutoSize = true;
             this.lblRespZ.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRespZ.Location = new System.Drawing.Point(345, 356);
             this.lblRespZ.Name = "lblRespZ";
             this.lblRespZ.Size = new System.Drawing.Size(0, 19);
             this.lblRespZ.TabIndex = 132;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(243, 72);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(18, 20);
+            this.label11.TabIndex = 111;
+            this.label11.Text = "+";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(167, 68);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(18, 20);
+            this.label12.TabIndex = 124;
+            this.label12.Text = "+";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(167, 156);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(18, 20);
+            this.label13.TabIndex = 125;
+            this.label13.Text = "+";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // matriz_3
             // 
@@ -431,7 +444,8 @@ namespace calculadoraMateAlgebra
             this.Controls.Add(this.lblMostrarSoluZ);
             this.Controls.Add(this.lblMostrarSoluY);
             this.Controls.Add(this.lblMostrarSoluc);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtc1);
@@ -445,6 +459,7 @@ namespace calculadoraMateAlgebra
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnResolver);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -459,6 +474,7 @@ namespace calculadoraMateAlgebra
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "matriz_3";
             this.Text = "matriz_3";
+            this.Load += new System.EventHandler(this.matriz_3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,7 +504,6 @@ namespace calculadoraMateAlgebra
         private System.Windows.Forms.TextBox txtc1;
         private System.Windows.Forms.TextBox txtb1;
         private System.Windows.Forms.TextBox txta1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblMostrarSoluY;
@@ -497,5 +512,8 @@ namespace calculadoraMateAlgebra
         private System.Windows.Forms.Label lblRespX;
         private System.Windows.Forms.Label lblRespY;
         private System.Windows.Forms.Label lblRespZ;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }

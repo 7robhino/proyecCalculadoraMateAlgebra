@@ -163,6 +163,11 @@ namespace calculadoraMateAlgebra
                 btnResolver.PerformClick(); // Activa el evento Click del Button1
             }
         }
+
+        private void formMatrices_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
