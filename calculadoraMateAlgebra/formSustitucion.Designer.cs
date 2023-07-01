@@ -85,6 +85,8 @@ namespace calculadoraMateAlgebra
             this.txta1.Name = "txta1";
             this.txta1.Size = new System.Drawing.Size(38, 20);
             this.txta1.TabIndex = 3;
+            this.txta1.TextChanged += new System.EventHandler(this.txta1_TextChanged);
+            this.txta1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txta1_KeyPress);
             // 
             // txtc1
             // 
@@ -92,6 +94,7 @@ namespace calculadoraMateAlgebra
             this.txtc1.Name = "txtc1";
             this.txtc1.Size = new System.Drawing.Size(31, 20);
             this.txtc1.TabIndex = 4;
+            this.txtc1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtc1_KeyPress);
             // 
             // txtb1
             // 
@@ -99,6 +102,7 @@ namespace calculadoraMateAlgebra
             this.txtb1.Name = "txtb1";
             this.txtb1.Size = new System.Drawing.Size(37, 20);
             this.txtb1.TabIndex = 5;
+            this.txtb1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtb1_KeyPress);
             // 
             // txtc2
             // 
@@ -106,6 +110,7 @@ namespace calculadoraMateAlgebra
             this.txtc2.Name = "txtc2";
             this.txtc2.Size = new System.Drawing.Size(31, 20);
             this.txtc2.TabIndex = 6;
+            this.txtc2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtc2_KeyDown);
             // 
             // txtb2
             // 
@@ -113,6 +118,7 @@ namespace calculadoraMateAlgebra
             this.txtb2.Name = "txtb2";
             this.txtb2.Size = new System.Drawing.Size(37, 20);
             this.txtb2.TabIndex = 7;
+            this.txtb2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtb2_KeyPress);
             // 
             // txta2
             // 
@@ -120,6 +126,7 @@ namespace calculadoraMateAlgebra
             this.txta2.Name = "txta2";
             this.txta2.Size = new System.Drawing.Size(38, 20);
             this.txta2.TabIndex = 8;
+            this.txta2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txta2_KeyPress);
             // 
             // label2
             // 

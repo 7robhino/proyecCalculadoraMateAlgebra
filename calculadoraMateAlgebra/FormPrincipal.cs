@@ -232,7 +232,8 @@ namespace calculadoraMateAlgebra
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            openChildFormInPanel(new matriz_3());
+            ocultarSubMenu();
         }
 
         private Form activeForm = null;

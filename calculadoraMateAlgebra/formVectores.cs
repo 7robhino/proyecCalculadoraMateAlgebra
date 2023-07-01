@@ -52,6 +52,10 @@ namespace calculadoraMateAlgebra
 
                 // Calcular la solución X
                 float[,] X = MultiplyMatrices(A_inv, B);
+
+                label7.Text = ("La solución del sistema de ecuaciones es:");
+                label8.Text = ("x = " + X[0, 0]);
+                label9.Text = ("y = " + X[1, 0]);
             }
         }
         // Función para calcular la inversa de una matriz 2x2
@@ -93,6 +97,71 @@ namespace calculadoraMateAlgebra
             }
 
             return result;
+        }
+
+        private void txta1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtb1.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtb1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtc1.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtc1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txta2.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txta2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtb2.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtb2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtc2.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtc2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void txtc2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese la tecla Enter
+
+                btnResolver.PerformClick(); // Activa el evento Click del Button1
+            }
         }
     }
 

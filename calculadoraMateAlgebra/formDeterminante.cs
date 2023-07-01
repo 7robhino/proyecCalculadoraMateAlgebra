@@ -81,5 +81,65 @@ namespace calculadoraMateAlgebra
                
             }
         }
+
+        private void txta1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtb1.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtb1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtc1.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtc1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txta2.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txta2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtb2.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtb2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese el carácter Enter
+
+                txtc2.Focus(); // Establece el foco en TextBox2
+            }
+        }
+
+        private void txtc2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true; // Evita que el TextBox1 procese la tecla Enter
+
+                btnResolver.PerformClick(); // Activa el evento Click del Button1
+            }
+        }
     }
 }
